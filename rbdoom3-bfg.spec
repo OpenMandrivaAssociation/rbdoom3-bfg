@@ -7,8 +7,7 @@ Release:	1
 License:	GPLv3+
 Group:		Games/Arcade
 Url:		https://github.com/RobertBeckebans/RBDOOM-3-BFG
-# https://github.com/RobertBeckebans/RBDOOM-3-BFG/archive/v%{version}.tar.gz
-Source0:	%{oname}-%{version}.tar.gz
+Source0:	https://github.com/RobertBeckebans/RBDOOM-3-BFG/archive/refs/tags/v%{version}/%{oname}-%{version}.tar.gz
 Source1:	%{name}.png
 BuildRequires:	cmake
 BuildRequires:	imagemagick
