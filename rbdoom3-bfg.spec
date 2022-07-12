@@ -46,7 +46,6 @@ $HOME/.rbdoom3bfg/
 %autosetup -p1 -n %{oname}-%{version}
 
 %build
-%global optflags %{optflags} -std=c++14
 pushd neo
 %cmake
 %make
