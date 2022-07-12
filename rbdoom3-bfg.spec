@@ -46,8 +46,8 @@ $HOME/.rbdoom3bfg/
 %autosetup -p1 -n %{oname}-%{version}
 
 %build
-export CC=gcc
-export CXX=g++
+#export CC=gcc
+#export CXX=g++
 pushd neo
 ./cmake-eclipse-linux-profile.sh
 cd ../build
