@@ -49,7 +49,8 @@ $HOME/.rbdoom3bfg/
 export CC=gcc
 export CXX=g++
 pushd neo
-%cmake
+./cmake-eclipse-linux-profile.sh
+cd ../build
 %make
 popd
 
