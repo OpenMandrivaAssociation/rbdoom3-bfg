@@ -49,8 +49,17 @@ $HOME/.rbdoom3bfg/
 #export CC=gcc
 #export CXX=g++
 pushd neo
-./cmake-eclipse-linux-profile.sh
-cd ../build
+%cmake  \
+  -DBUILD_SHARED_LIBS=OFF \
+  -DSDL2=ON \
+  -DOPENAL=ON \
+  -DOpenGL_GL_PREFERENCE=GLVND \
+  -DONATIVE=OFF \
+  -DUSE_SYSTEM_ZLIB=ON \
+  -DUSE_SYSTEM_LIBPNG=ON \
+  -DUSE_SYSTEM_LIBJPEG=OFF \
+  -DUSE_SYSTEM_LIBGLEW=ON \
+  -DUSE_SYSTEM_RAPIDJSON=ON
 %make
 popd
 
