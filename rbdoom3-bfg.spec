@@ -11,6 +11,7 @@ Source0:	https://github.com/RobertBeckebans/RBDOOM-3-BFG/archive/refs/tags/v%{ve
 Source1:	%{name}.png
 BuildRequires:	cmake
 BuildRequires:	imagemagick
+BuildRequires:  rapidjson
 BuildRequires:	ffmpeg-devel
 BuildRequires:	jpeg-devel
 BuildRequires:  pkgconfig(libpng)
