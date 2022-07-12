@@ -16,6 +16,7 @@ BuildRequires:	jpeg-devel
 BuildRequires:  pkgconfig(libpng)
 BuildRequires:	pkgconfig(gl)
 BuildRequires:	pkgconfig(glu)
+BuildRequires:  pkgconfig(glew)
 BuildRequires:	pkgconfig(openal)
 BuildRequires:	pkgconfig(sdl2)
 BuildRequires:	pkgconfig(zlib)
