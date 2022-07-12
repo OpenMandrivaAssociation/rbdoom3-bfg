@@ -13,6 +13,7 @@ BuildRequires:	cmake
 BuildRequires:	imagemagick
 BuildRequires:	ffmpeg-devel
 BuildRequires:	jpeg-devel
+BuildRequires:  pkgconfig(libpng)
 BuildRequires:	pkgconfig(gl)
 BuildRequires:	pkgconfig(glu)
 BuildRequires:	pkgconfig(openal)
@@ -57,7 +58,7 @@ pushd neo
   -DONATIVE=OFF \
   -DUSE_SYSTEM_ZLIB=ON \
   -DUSE_SYSTEM_LIBPNG=ON \
-  -DUSE_SYSTEM_LIBJPEG=OFF \
+  -DUSE_SYSTEM_LIBJPEG=ON \
   -DUSE_SYSTEM_LIBGLEW=ON \
   -DUSE_SYSTEM_RAPIDJSON=ON
 %make
