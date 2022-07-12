@@ -2,22 +2,14 @@
 
 Summary:	Doom 3: BFG Edition game engine
 Name:		rbdoom3-bfg
-Version:	1.0.3
-Release:	6
+Version:	1.4.0
+Release:	1
 License:	GPLv3+
 Group:		Games/Arcade
 Url:		https://github.com/RobertBeckebans/RBDOOM-3-BFG
 # https://github.com/RobertBeckebans/RBDOOM-3-BFG/archive/v%{version}.tar.gz
 Source0:	%{oname}-%{version}.tar.gz
 Source1:	%{name}.png
-# Don't override CXX flags
-Patch0:		rbdoom3-bfg-1.0.2-cflags.patch
-Patch1:		rbdoom3-bfg-1.0.2-static.patch
-Patch2:		rbdoom3-bfg-1.0.3-path.patch
-Patch3:		rbdoom3-bfg-1.0.3-ffmpeg29.patch
-Patch4:		rbdoom3-bfg-1.0.3-gcc7.patch
-Patch5:		rbdoom3-bfg-1.0.3-gcc8.patch
-Patch6:		rbdoom3-bfg-1.0.3-c++14.patch
 BuildRequires:	cmake
 BuildRequires:	imagemagick
 BuildRequires:	ffmpeg-devel
